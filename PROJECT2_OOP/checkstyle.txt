@@ -1,0 +1,4 @@
+Starting audit...
+[ERROR] D:\proiect_POO2\proiect2\.\src\database\Repository.java:25:19: 'static' modifier out of order with the JLS suggestions. [ModifierOrder]
+Audit done.
+Checkstyle ends with 1 errors.

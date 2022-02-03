@@ -1,0 +1,25 @@
+Ilie David 324CA - 2022
+
+Pentru a putea sa actualizez codul de la etapa I, am mai adaugat 2 pachete,
+"assignprocessing" si "elfprocessing".
+
+In pachetul "assignprocessing", am implementat clasele care sa ma ajute sa
+sortez arraylist-ul de copii, dupa tipul de strategie dat de annualChanges.
+Pentru aceasta implementare, am folosit design pattern-ul Strategy si design
+pattern-ul Factory(pentru a crea obiectele pentru fiecare tip de strategie).
+
+In pachetul "elfprocessing", am implementat clasele care sa ma ajute sa
+aplic funtionalitatile elfilor, dupa tipul de elf dat de fiecare copil.
+Pentru aceasta implementare, am folosit design pattern-ul Strategy si design
+pattern-ul Factory(pentru a crea obiectele pentru fiecare tip de elf).
+
+Pe langa aceste doua update-uri, am mai facut o metoda in clasa "Executor",
+care imi asigneaza cadourile pentru copii care au elful galben(metoda se
+numeste "yellowElf").
+
+Pentru a updata Repository, am folosit design pattern-ul Observer,
+Repository-ul fiind Observable-ul, iar clasa UpdateRepository din pachetul
+"execution" este singurul observer.
+
+In total am folosit 4 dessign pattern-uri (Factory, Strategy, Observer si
+Singleton).
