@@ -1,0 +1,59 @@
+Object Oriented Programming Course
+Homework - VideosDB
+
+November 2021
+
+# Info
+https://ocw.cs.pub.ro/courses/poo-ca-cd/teme/tema
+
+# About the code
+
+We provide the input tests, the logic that parses them and the checker that runs them.
+
+* test_db - contains the tests in JSON format
+* src
+   * checker - the checker's sources including the checkstyle necessary files, not to be modified
+   * fileio - classes for parsing the input files, not to be modified
+   * common, utils
+        * contain utility classes with constants and static methods
+        * you can add your own functionality in the existing classes or add new classes as well
+   * actor
+        * contains an enum for the types of awards an actor can have - do not modify it
+        * you can add here your actor related classes
+   * entertainment
+        * contains an enum for the supported video genres - do not modify it
+        * class for representing a Season of a tv show - do not modify it
+        * you can add here your entertainment related classes
+
+We encourage you to organize your implementation in packages based on the functionality their classes offer. Try to keep
+your code modular, readable and documented.
+
+# Testing
+
+The Main class runs the checker on your implementation. Add the entry point to your implementation in it.
+
+Run Main to test your implementation from the IDE or from command line.
+
+Run the main method from Test class with the name of the input file from the command line and the result will be written
+to the out.txt file. Thus, you can compare this result with ref.
+
+Ilie David 324CA - 2021
+
+Pentru implementarea acestui proiect, am ales sa creez mai multe pachete care
+sa imi usureze munca.
+In pachetul "entities", am implementat clasele Actor,
+Movie, Show, User si video(care este o clasa abstracta, movie si show
+mostenind-o). In toate aceste clase, retin fiecare tip de obiect care este
+parsat prin intermediul claselor din "fileio" si le retin in clasa Repository
+din pachetul "database".
+In pachetul "actions", am implementat cate o clasa pentru fiecare tip de
+actiune(comanda, query sau recomandare), iar clasa "Query" este una abstracta
+pentru ca clasele "UserQuery", "ShowQuery", "MovieQuery" si "ActorQuery" o
+mostenesc. Am ales sa impart actiunea "query" in patru pentru ca fiecare este
+practic alt tip de actiune, avand cateva metode in comun pe care le-am pus in
+clasa abstracta.
+
+Feedback:
+Per total, aceasta tema mi s-a parut o tema indeajuns de usoara cat sa fie
+prima tema la POO, dar si indeajuns de complexa pentru a ne familiariza mai
+bine cu scrisul codului in Java si conceptele de POO.
